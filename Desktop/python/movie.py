@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 movies=pd.read_csv('movies.csv')
 credits=pd.read_csv('credits.csv')
-#merging the two datasets
+
 movies=movies.merge(credits,on='title')
 
 #PREPROCESSING DATA
